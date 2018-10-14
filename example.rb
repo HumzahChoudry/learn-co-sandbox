@@ -1,7 +1,13 @@
 def my_method(array)
-  
+ new_arr = []
+ 
+ array.each do |name|
+   new_arr << "My name is #{name}"
+ end
+ 
+ return new_arr
 end
 
-my_array = ["Dumb and Dumber", "Remember the Titans", "Rush Hour", "Oceans 11"]
+my_array = ["Humzah", "Jordan", "Jessica"]
 
-my_method(my_array)
+puts my_method(my_array)
